@@ -11,20 +11,25 @@
 
 int main(void)
 {
-	int count;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	long int i, j, k, next;
 
-	for (count = 0; count < 50; ++count)
+	j = 1;
+
+	k = 2;
+
+	for (i = 1; i <= 50; ++i)
 	{
-		sum = fib1 + fib2;
-		printf("%lu", sum);
+		if (j != 20365011074)
+		{
+			printf("%ld, ", j);
+		} else
+		{
+			printf("%ld\n", j);
+		}
 
-		fib1 = fib2;
-
-		if (count == 49)
-			printf("\n");
-		else
-			printf(", ");
+		next = j + k;
+		j = k;
+		k = next;
 	}
 
 	return (0);
