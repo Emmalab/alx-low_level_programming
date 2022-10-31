@@ -1,1 +1,1 @@
-0x07-pointers_arrays_strings
+This directory contains the 0x07. C - Even more pointers, arrays and strings assignment
